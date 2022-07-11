@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
 
 export const routes: Routes = [
   {path: '', redirectTo: 'features', pathMatch: 'full'},
@@ -13,14 +13,24 @@ export const routes: Routes = [
           (await import('./features/features.module')).FeaturesModule,
       },
     ],
-    data: {
-      breadcrumb: ''
-    }
+    // data: {
+    //   breadcrumb: ''
+    // }
   },
+  // {
+  //   path: '**',
+  //   redirectTo: 'features',
+  // }
 ] as Routes;
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes,
+
+    {
+      useHash: true,
+      preloadingStrategy: PreloadAllModules
+    }
+  )],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

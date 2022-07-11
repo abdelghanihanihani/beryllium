@@ -1,32 +1,38 @@
 <div class="gtco-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="owl-carousel owl-carousel-fullwidth">
-        <div class="item">
-          <a href="#">
-            <img src="./assets/images/slider_1.jpg" alt="Free Website Template by FreeHTML5.co">
-            <div class="slider-copy">
-              <h2>Architecture #1</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" *ngFor="let slide of slidesStore;index as i" [ngClass]="i === 0 ? 'active' : ''"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item" *ngFor="let slide of slidesStore;index as i" [ngClass]="i === 0 ? 'active' : ''" >
+            <img [src]="slide.src" [alt]="slide.alt">
+            <div class="carousel-caption">
+
+              <h2>{{slide.title}}</h2>
+
             </div>
-          </a>
+          </div>
+
+
+
         </div>
-        <div class="item">
-          <a href="#">
-            <img src="./assets/images/slider_2.jpg" alt="Free Website Template by FreeHTML5.co">
-            <div class="slider-copy">
-              <h2>Architecture #1</h2>
-            </div>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <img src="./assets/images/slider_3.jpg" alt="Free Website Template by FreeHTML5.co">
-            <div class="slider-copy">
-              <h2>Architecture #1</h2>
-            </div>
-          </a>
-        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+
     </div>
   </div>
 </div>
@@ -36,7 +42,8 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2 gtco-heading text-center">
         <h2>Work</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus
+          euismod erat tincidunt. Donec tincidunt volutpat erat.</p>
       </div>
     </div>
     <div class="row">
@@ -126,7 +133,8 @@
             <a href="#">
               <span class="post-date">September 10, 2016</span>
               <h3>Manila Bridge Re-construction</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis,
+                rhoncus euismod...</p>
             </a>
           </li>
 
@@ -134,7 +142,8 @@
             <a href="#">
               <span class="post-date">September 10, 2016</span>
               <h3>Manila Bridge Re-construction</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis,
+                rhoncus euismod...</p>
             </a>
           </li>
 
@@ -142,7 +151,8 @@
             <a href="#">
               <span class="post-date">September 10, 2016</span>
               <h3>Manila Bridge Re-construction</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis,
+                rhoncus euismod...</p>
             </a>
           </li>
         </ul>
@@ -152,11 +162,13 @@
       <div class="col-md-5 col-md-push-1 gtco-testimonials">
         <h2>Testimonials</h2>
         <blockquote>
-          <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.&ldquo;</p>
+          <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis,
+            rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.&ldquo;</p>
           <p class="author"><cite>&mdash; John Doe Dueller</cite></p>
         </blockquote>
         <blockquote>
-          <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.&ldquo;</p>
+          <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis,
+            rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.&ldquo;</p>
           <p class="author"><cite>&mdash; John Doe Dueller</cite></p>
         </blockquote>
       </div>

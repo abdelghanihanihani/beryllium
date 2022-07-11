@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {SharedModule} from "./shared/shared.module";
 import {RouterModule} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {AppRoutingModule} from "./app-routing.module";
   imports: [
     BrowserModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
 
   ],
   providers: [],

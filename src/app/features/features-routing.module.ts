@@ -7,26 +7,36 @@ const routes: Routes = [
     path: '',
     component: FeaturesComponent,
     children: [
-
+      //
       {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full',
       },
-      // {
-      //   path: '**',
-      //   redirectTo: 'home',
-      // },
+
       {
         path: 'home',
-        loadChildren: async () =>
-          (await import('./home/home.module')).HomeModule,
+        loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
       },
       {
         path: 'about',
-        loadChildren: async () =>
-          (await import('./about/about.module')).AboutModule,
+        loadChildren: () => import('./about/about.module').then(m => m.AboutModule),
+
       },
+      {
+        path: 'portfolio',
+        loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule),
+
+      },
+      {
+        path: 'contact',
+        loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
+
+      },
+      {
+        path: '**',
+        redirectTo: 'home',
+      }
     ]
   }
 

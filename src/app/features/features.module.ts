@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { FeaturesRoutingModule } from './features-routing.module';
-import { FeaturesComponent } from './features.component';
+import {FeaturesRoutingModule} from './features-routing.module';
+import {FeaturesComponent} from './features.component';
 import {CoreModule} from "../core/core.module";
 
 
@@ -15,6 +15,8 @@ import {CoreModule} from "../core/core.module";
     FeaturesRoutingModule,
     CoreModule
 
-  ]
+  ],
+  exports: [FeaturesComponent]
 })
-export class FeaturesModule { }
+export class FeaturesModule {
+}
