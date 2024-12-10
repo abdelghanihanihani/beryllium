@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng serve",
+    "prod:web": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng build --output-path docs --base-href /spabeauty/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

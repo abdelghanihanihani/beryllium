@@ -1,27 +1,40 @@
-# Beryllium
+# Spabeauty
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
+This Spabeauty App is a modern and responsive web application designed to provide users with an intuitive and engaging experience for exploring and booking beauty and wellness services. Built using Angular 8 and styled with Bootstrap, this app showcases a clean, professional, and user-friendly interface tailored for service providers and customers alike.
 
-## Development server
+**Please support this project by simply putting a Github star ⭐. 🙏 Thanks**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies
 
-## Code scaffolding
+- Frontend Framework: Angular 8
+- UI Framework: Bootstrap for responsive and modern design
+- Routing: Angular Router for navigation within the SPA
+- State Management: Services and RxJS for managing application state and reactive programming
+- CSS Preprocessing: SCSS for modular and maintainable stylesheets
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm install` to install all the required dependencies
 
-## Running unit tests
+Then run `ng serve` to start a dev server.
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Home page
 
-## Running end-to-end tests
+<img width="1340" alt="home" src="https://github.com/user-attachments/assets/e6202012-0c7c-4909-8f46-a90b3c4c5bdf">
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Treatments page
 
-## Further help
+<img width="1333" alt="treatments1" src="https://github.com/user-attachments/assets/02e47e3c-1a82-492e-8329-a7cb0ffb1861">
+<img width="1315" alt="treatments2" src="https://github.com/user-attachments/assets/4a90b6f9-a63d-4b48-93cc-51708e4fc58e">
+<img width="1344" alt="treatments3" src="https://github.com/user-attachments/assets/fa305bfe-ff74-4cac-9944-01095f7d80b3">
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contact Us page
+
+<img width="1333" alt="contactus" src="https://github.com/user-attachments/assets/b6f03a71-b395-4789-a3e4-a56ff728b62a">
+<img width="1314" alt="contactus2" src="https://github.com/user-attachments/assets/2edfb113-4813-40eb-a0d9-029bf4166296">
+
+## Online Demo
+
+You can try the online demo of this Angular 8 App [here](https://abdelghanihanihani.github.io/spabeauty/).
