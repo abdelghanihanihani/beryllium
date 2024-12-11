@@ -37,4 +37,4 @@ Navigate to `http://localhost:4200/`. The app will automatically reload if you c
 
 ## Online Demo
 
-You can try the online demo of this Angular 8 App [here](https://abdelghanihanihani.github.io/spabeauty/).
+You can try the online demo of this Angular 13 App [here](https://abdelghanihanihani.github.io/beryllium/).
