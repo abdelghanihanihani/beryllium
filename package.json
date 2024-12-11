@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng serve",
-    "prod:web": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng build --output-path docs --base-href /spabeauty/",
+    "prod:web": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng build --output-path docs --base-href /beryllium/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
